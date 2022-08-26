@@ -63,9 +63,12 @@ using it cannot be further manipulated or read without the key.
 
 Fernet is built on top of a number of standard cryptographic primitives. 
 Specifically, it uses:
+
 ➢ AES in CBC mode with a 128-bit key for encryption; using PKCS7 
 padding.
+
 ➢ HMAC using SHA256 for authentication.
+
 ➢ Initialization vectors are generated using os.urandom()
 
 
